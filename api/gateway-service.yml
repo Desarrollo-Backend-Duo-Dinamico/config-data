@@ -22,3 +22,7 @@ spring:
               uri: lb://product-service
               predicates:
               - Path=/category/**,/product/**
+            - id: inovoice-service
+              uri: lb://inovoice-service
+              predicates:
+              - Path=/inovoice/**,/cart/**
